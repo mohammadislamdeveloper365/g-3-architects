@@ -88,6 +88,9 @@
     margin:10px 0;
 }
 
+.architect-description-img-container {
+    padding:0.675rem;
+}
 .architect-description-img-container img{
     max-width: 100%;
 }
@@ -102,6 +105,28 @@
     right:3.5rem;
     width:25%;
 }
+
+.architect-facts {
+    margin:6vw 0px;
+    padding:0.675rem;
+}
+
+.architect-facts-card-container {
+    padding:2.625vw;
+}
+
+.architect-card-box {
+    display:inline-block;
+    padding:2vw 1vw;
+    border: 1px solid #FF900E;
+    border-radius: 7px;
+    transition:transform 3s ease;
+}
+
+.architect-card-box:hover {
+    transform:scale(1.5);
+    
+}
 @media only screen and (max-width:575px) {
     .nav-link {
         text-align: center;
@@ -111,5 +136,22 @@
         bottom:0px;
         right:0px;
         width:100%;
+    }
+
+    .architect-card-box {
+        display:block;
+        margin:1vw 0;
+        width:100%;
+        transition:background-color 3s ease;
+    }
+
+    .architect-card-box span {
+        display:block;
+    }
+   
+    .architect-card-box:hover {
+        transform:scale(1);
+        background-color: #FF900E;
+        
     }
 }
