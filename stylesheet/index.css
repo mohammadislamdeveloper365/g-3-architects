@@ -100,11 +100,15 @@ Main Section
     margin:10px 0;
 }
 
+.architect-facts-heading {
+    max-width:400px ;
+}
 .architect-description-img-container {
     padding:0.675rem;
 }
 .architect-description-img-container img{
     max-width: 100%;
+    margin:auto;
 }
 
 .experience-box {
@@ -212,5 +216,28 @@ Main Section
         transform:scale(1);
         background-color: #FF900E;
         
+    }
+    .architect-facts-heading {
+        max-width:400px ;
+        margin:auto;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+    .architect-features{
+       justify-content: center;
+    }
+    .experience-box {
+        bottom:0px;
+        right:0px;
+        width:50%;
+        margin:auto;
+        text-align: center;
+    }
+    .architect-facts-heading {
+        max-width:400px ;
+        margin:auto;
+        text-align: center;
     }
 }
