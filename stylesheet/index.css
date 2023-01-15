@@ -1,9 +1,14 @@
-.banner {
+/*
+---------
+Banner
+--------
+*/
+.architect-banner {
     padding:2.5rem 1.5rem;
     background-color: var(--light-orange-color);
 }
 
-.banner-head{
+.architect-banner-head{
     margin:10vw 0 2vw;
 
 }
@@ -12,7 +17,7 @@
     max-width:825px;
     margin:auto;
 }
-.banner-name {
+.architect-banner-name {
     color:var(--dark-color);
 }
 
@@ -36,7 +41,14 @@
     width:100%;
 }
 
-.main-container {
+
+/*
+-------------
+Main Section
+------------
+*/
+
+.main-container, #architect-footer {
     max-width:1200px;
     margin:4vw auto 6vw;
 }
@@ -106,6 +118,28 @@
     width:25%;
 }
 
+@keyframes moving-box {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:25%; top:0px;}
+    50%  {background-color:blue; left:50%; top:0px;}
+    75%  {background-color:green; left:75%; top:0px;}
+    100% {background-color:red; left:100%; top:0px;}
+  }
+
+#animation-box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: moving-box;
+    animation-duration: 4s;
+    animation-delay:2s;
+    animation-iteration-count: infinite;
+  }
+  
+  
+
+
 .architect-facts {
     margin:6vw 0px;
     padding:0.675rem;
@@ -127,6 +161,31 @@
     transform:scale(1.5);
     
 }
+
+.architect-sponsor {
+    margin:6vw 0;
+}
+
+.architect-sponsor-heading {
+    max-width:540px;
+    margin:auto;
+}
+
+.architect-sponsor-logo-container {
+    padding:2vw;
+    margin:auto;
+    justify-content: center;
+}
+.architect-sponsor-logo-container img {
+    padding:4vw;
+    max-width:100%;
+}
+
+#architect-footer {
+    background-color: var(--light-orange-color);
+    padding:2.5rem;
+}
+
 @media only screen and (max-width:575px) {
     .nav-link {
         text-align: center;
