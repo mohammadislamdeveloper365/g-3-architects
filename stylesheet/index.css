@@ -17,7 +17,10 @@
 }
 
 .nav-link {
+    display:inline-block;
+    width:100%;
     color:var(--x-light-dark-color);
+    text-align: right;
 }
 
 .banner-btn {
@@ -31,4 +34,40 @@
 
 .banner-img-container > img {
     width:100%;
+}
+
+.main-container {
+    max-width:1200px;
+    margin:4vw auto 6vw;
+}
+
+.nav-container {
+    justify-content: space-between;
+}
+
+.architect-img-container img {
+    max-width:100%;
+    padding:10px;
+}
+
+.architect-features {
+    padding:5px;
+    align-content: center;
+}
+
+.architect-info {
+    padding:24px 0;
+}
+.light-dark-txt {
+    color: var(--light-dark-color);
+}
+
+.orng-txt {
+    color:var(--primary-color);
+}
+
+@media only screen and (max-width:575px) {
+    .nav-link {
+        text-align: center;
+    }
 }
